@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./Navbar.module.css";
 import { useAuth } from "../../context/AuthContext";
+import Model from "../Model";
 
 function Navbar() {
   const { logout, currentUser } = useAuth();
@@ -21,12 +22,7 @@ function Navbar() {
       </div>
       <div className={styles.divider}/>
 
-      {/*  <h1>navbar</h1>
-      <button onClick={logout}>
-        signout
-      </button>
-      <img src={currentUser.photoURL}/>
-      <h1>{currentUser.displayName}</h1> */}
+     <Model/>
     </div>
   );
 }
